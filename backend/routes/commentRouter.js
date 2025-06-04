@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Photo = require("../db/PhotoModel");
+const Photo = require("../db/photoModel");
 
 function authMiddleware(req, res, next) {
     if (req.session && req.session.user) {
