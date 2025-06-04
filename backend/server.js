@@ -11,10 +11,10 @@ const UserRouter = require("./routes/UserRouter");
 const PhotoRouter = require("./routes/PhotoRouter");
 const LoginRouter = require("./routes/LoginRouter");
 const commentRouter = require("./routes/commentRouter");
-
+const PORT = process.env.PORT || 8081 ;
 dbConnect();
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: true,
     credentials: true,
 }));
 app.use(express.json());
@@ -58,6 +58,6 @@ app.get("/", (req, res) => {
     res.send({ message: "Hello from photo-sharing app API!" });
 });
 
-app.listen(8081, () => {
-    console.log("Server listening on port 8081");
+app.listen(PORT, () => {
+    console.log("Server listening on port ${PORT}");
 });
