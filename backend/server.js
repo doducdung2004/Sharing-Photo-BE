@@ -10,7 +10,7 @@ const dbConnect = require("./db/dbConnect");
 const UserRouter = require("./routes/UserRouter");
 const PhotoRouter = require("./routes/PhotoRouter");
 const LoginRouter = require("./routes/LoginRouter");
-const commentRouter = require("./routes/CommentRouter");
+const commentRouter = require("./routes/commentRouter");
 
 dbConnect();
 app.use(cors({
