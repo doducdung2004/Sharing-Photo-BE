@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8081;
 dbConnect();
 app.use(
   cors({
-    origin: "https://ndwcpz-3000.csb.app",
+    origin: "https://n56q47-3000.csb.app",
     credentials: true,
   })
 );
