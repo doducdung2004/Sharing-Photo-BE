@@ -15,8 +15,9 @@ const PORT = process.env.PORT || 8081;
 dbConnect();
 app.use(
   cors({
-    origin: "https://n56q47-3000.csb.app",
-    credentials: true,
+    origin: "https://rrssn6-3000.csb.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json());
